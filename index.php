@@ -539,7 +539,7 @@ $conn->close();
             }
 
 
-            // Mengembalikan ikon marker sebelumnya
+            // mengembalikan ikon marker sebelumnya
 
             if (markerTerpilih !== null) {
                 markerTerpilih.setIcon(koperasiIcon);
@@ -547,7 +547,7 @@ $conn->close();
             }
 
 
-            // Memilih baris baru
+            // memilih baris baru
 
             var baris = document.getElementById('row-' + index);
 
@@ -556,7 +556,7 @@ $conn->close();
             }
 
 
-            // Memilih marker baru
+            // memilih marker baru
 
             markerTerpilih = daftarMarker[index];
 
@@ -608,9 +608,6 @@ $conn->close();
             "Persebaran Koperasi Merah Putih": markerLayer
         };
 
-
-        // MEMBUAT LAYER CONTROL
-
         var layerControl = L.control.layers(
             baseMaps,
             overlayMaps,
@@ -621,7 +618,7 @@ $conn->close();
         ).addTo(map);
 
 
-        // MENAMBAHKAN LEGENDA KE DALAM LAYER CONTROL
+        // MENAMBAHKAN LEGENDA
 
         var legend = L.DomUtil.create('div', 'legend-control');
 
